@@ -1,0 +1,3 @@
+# Chatroom
+
+The general structure of this problem can be devided into three parts. In the simplest case we have two clients, namely client0 and client1, and a server. Except for that the server provides the interface, everything else will remain the same among these three classes: they inherit from the class socket.socket and have two methods sending and recving. The two methods are built to loop infinitely just so that all requests are accepted unattended. In the meantime, in order to avoid interruption between these two functions, we have to run them simultaneously using the threading package. The two clients are reporting to different ports of the same host and the server listens to both, also in an infinite loop.
